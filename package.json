@@ -1,0 +1,36 @@
+{
+  "name": "@paulofroes/mcp-openai-whisper",
+  "version": "1.0.0",
+  "description": "MCP server wrapping OpenAI Whisper API for audio transcription",
+  "type": "module",
+  "bin": {
+    "mcp-openai-whisper": "build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["mcp", "openai", "whisper", "transcription", "audio", "speech-to-text", "claude"],
+  "author": "Paulo Froes",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulofroes/mcp-openai-whisper.git"
+  },
+  "homepage": "https://github.com/paulofroes/mcp-openai-whisper#readme",
+  "bugs": {
+    "url": "https://github.com/paulofroes/mcp-openai-whisper/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "openai": "^4.77.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.1",
+    "typescript": "^5.9.3"
+  }
+}
